@@ -12,25 +12,35 @@
     <!-- CONTENEDOR TARJETA -->
     <div class="card-container">
         <div class="card">
-            <h2>Card Title</h2>
-            <p>This is a simple card.</p>
-            <button id="open-modal" >Open Modal</button>
+            <div class="info">
+                <h2>Miroslava Del Toro</h2>
+                <p>Frontend Developer Jr.</p>
+            </div>
+            <button id="open-modal">Open Modal</button>
             <img class="profile-picture" src="img/1.png" alt="Profile Picture">
+                <ul class="social-media">
+                    <a class="icon-github" href="https://github.com/mirosdt" target="_blank"><img src="/img/github-color.png" alt="logo github"></a>
+                    <a class="icon-pinterest" href="https://www.pinterest.com.mx/miroscdt/" target="_blank"><img src="/img/pinterest-color.png" alt="logo pinterest"></a>
+                    <a class="icon-linkedin" href="https://www.linkedin.com/in/miroslava-cdt/" target="_blank"><img  src="/img/linkedin-color.png" alt="logo linkedin"></a>
+                </ul>
         </div>
     </div>
-            
+
     <!-- CONTENEDOR VENTANA EMERGENTE -->
     <div id="modal" class="modal" onclick="myFunction()">
         <div class="modal-content">
             <span id="close-modal" class="close-button" onclick="closeFunction()">&times;</span>
+
             <h2>Modal Title</h2>
             <p>This is a modal dialog.</p>
+
+            <h2>Modal Title</h2>
         </div>
     </div>
 
     <!-- BOTON CAMBIO DE TEMA -->
     <div id="boton-tema" class="boton-tema">
-        <button onclick="themeFunction()">🌗Theme</button> 
+        <button onclick="themeFunction()">🌗Theme</button>
     </div>
 
     <script src="/script.js"></script>
