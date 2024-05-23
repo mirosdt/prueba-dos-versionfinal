@@ -24,27 +24,19 @@ body {
     gap: 20px;
 }
 
-.icon-github {
+.icon-github, .icon-pinterest, .icon-linkedin {
     display: block;
     width: 15px;
     height: 15px;
-}
-
-.icon-pinterest {
-    display: block;
-    width: 15px;
-    height: 15px;
-}
-
-.icon-linkedin {
-    display: block;
-    width: 14px;
-    height: 14px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 50%;
 }
 
 .social-media img {
     width: 160%;
     height: 160%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 50%;
 }
 
 .card {
@@ -67,6 +59,8 @@ body {
     bottom: 130px;
     left: 10px;
     height: 110px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15); 
+    border-radius: 50%; 
 }
 
 .open-modal {
@@ -78,6 +72,7 @@ body {
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 /* Botón */
@@ -89,6 +84,7 @@ button {
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 button:hover {
@@ -106,8 +102,10 @@ button:hover {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
     justify-content: center;
     align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .modal-content {
@@ -156,4 +154,41 @@ body.dark-mode .card {
 body.dark-mode .modal-content {
     background: #444;
     color: #f0f0f0;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 600px) {
+    .card {
+        max-width: 90%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .profile-picture {
+        position: static;
+        margin: 0 auto 20px auto;
+        display: block;
+    }
+
+    .open-modal {
+        position: static;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .social-media {
+        position: static;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .boton-tema {
+        position: static;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .info {
+        padding-top: 10px;
+    }
 }
