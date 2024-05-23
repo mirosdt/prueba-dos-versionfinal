@@ -6,12 +6,14 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Caja Tarjeta */
 .card-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
+
 .social-media {
     position: absolute;
     top: 10px;
@@ -27,11 +29,13 @@ body {
     width: 15px;
     height: 15px;
 }
+
 .icon-pinterest {
     display: block;
     width: 15px;
     height: 15px;
 }
+
 .icon-linkedin {
     display: block;
     width: 14px;
@@ -53,15 +57,18 @@ body {
     max-width: 300px;
     width: 100%;
 }
+
 .info {
-   padding-top: 30px;
+    padding-top: 30px;
 }
+
 .profile-picture {
     position: absolute;
     bottom: 130px;
     left: 10px;
     height: 110px;
 }
+
 .open-modal {
     position: absolute;
     right: -70px;
@@ -72,6 +79,8 @@ body {
     border-radius: 50px;
     cursor: pointer;
 }
+
+/* Botón */
 button {
     padding: 15px 20px;
     margin-right: 40px;
@@ -81,10 +90,12 @@ button {
     border-radius: 50px;
     cursor: pointer;
 }
+
 button:hover {
     background: #754e80;
 }
 
+/* Ventana Emergente */
 .modal {
     display: none;
     position: fixed;
@@ -103,22 +114,27 @@ button:hover {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
-    max-width: 500px;
-    width: 90%;
+    max-width: 90%; 
+    width: 500px; 
     position: relative;
     text-align: center;
 }
 
+.modal-pdf iframe {
+    width: 100%; 
+    height: 80vh;
+}
+
 .close-button {
     position: absolute;
-    top: 10px;
+    top: 5px;
     right: 20px;
     font-size: 24px;
     cursor: pointer;
 }
 
-/* THEME BUTTON */
-.boton-tema{
+/* Theme Button */
+.boton-tema {
     position: fixed;
     margin-top: 50px;
     top: 20px;
@@ -128,7 +144,7 @@ button:hover {
 /* Dark Mode */
 body.dark-mode {
     background: radial-gradient(ellipse at bottom, #1b3149, transparent),
-    linear-gradient(-45deg, #1b5779, #62447c, #79284d);
+        linear-gradient(-45deg, #1b5779, #62447c, #79284d);
     color: #f0f0f0;
 }
 
